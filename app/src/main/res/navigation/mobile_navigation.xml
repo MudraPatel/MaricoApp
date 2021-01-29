@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.marico.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_tabLayout"
+        android:name="com.example.marico.ui.tab.TabLayoutFragment"
+        android:label="@string/menu_tab_layout"
+        tools:layout="@layout/fragment_tab_layout" />
+
+    <fragment
+        android:id="@+id/nav_captureImage"
+        android:name="com.example.marico.ui.image.CaptureImageFragment"
+        android:label="@string/menu_capture_image"
+        tools:layout="@layout/fragment_capture_image" />
+
+    <fragment
+        android:id="@+id/nav_addHospital"
+        android:name="com.example.marico.ui.hospital.AddHospitalFragment"
+        android:label="@string/menu_addHospital"
+        tools:layout="@layout/fragment_add_hospital" />
+</navigation>
